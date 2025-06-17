@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.dark {
+  --primary-color: #FFFFFF;
+  --background-color: #121212;
+
+  --text-color: #F5F5F5;
+  --subtle-text-color: #BBBBBB;
+
+  --muted-color: #2E2E2E;
+
+  --accent-color: #e6e6e6;
+  --highlight-color: #a5a5a5;
+
+}
+
+
+:root {
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* colors */
+  /* Main Colors */
+  --primary-color: #000000;
+  --background-color: #FFFFFF;
+
+  /* Typography Colors */
+  --text-color: #111111;
+  --subtle-text-color: #272626;
+
+  /* Muted Elements */
+  --muted-color: #ccc;
+
+  /* Accent Colors */
+  --accent-color: #2f2f2f;      /* Pink dot in logo */
+  --highlight-color: #504f4f;   /* Yellow for small highlights (emoji) */
+
+
+  /* fonts */
+  --body-font:"Poppins", sans-serif;
+  /* font-sizes */
+   /* .5rem = 8px | 1rem = 16px ... */
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.625rem;
+
+
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+body , html{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: 1.5;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  /* overflow-x: hidden; */
+  background-color: var(--background-color);
+      transition: all 0.3s ease-in-out;
+
+}
+
+button,
+input,
+textarea{
+  font-family:var(--body-font);
+  font-size: var(--normal-font-size);
+} 
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}  
+
+i{
+  color: var(--text-color);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* layout */
+
+/* resuable css classes */
+.section{
+  padding: 4rem 0 2rem 0;
+}
+ 
+.section__title{
+  font-size: var(--h1-font-size);
+  font-weight:700;
+  color: var(--text-color);
+  text-align: center;
+ }
+
+.section__subtitle{
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--subtle-text-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: var(--h2-font-size);
+  }
+  .section__subtitle {
+    font-size: var(--smaller-font-size);
+  }
+}
+
+
+.container{
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 0 2rem;
+} 
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* .button{
+
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  display: flex; 
+  align-items: center;
+ 
+} */
+ 
+.button {
+  width: 220px;
+  padding: 1rem 2rem;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  gap: 8px;
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
