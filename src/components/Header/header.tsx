@@ -1,9 +1,10 @@
 import ThemeToggle from "../ThemeToggler/themetoggler";
 import "./header.css";
 import { useState } from "react";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,67 +12,42 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   useGSAP(() => {
-    const mm = gsap.matchMedia(); 
+    const mm = gsap.matchMedia();
 
+    // 💻 For large screens
     mm.add("(min-width: 769px)", () => {
-    gsap.fromTo(
-      ".nav__logo",
-      {
-        y: -180,
-        scale: 5,
-        color: "#fff",
-        textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
-      },
-      {
-        y: 0,
-        scale: 1,
-        duration:1,
-        color:"var(--text-color)",
-        textShadow: "none",
+      gsap.from(".nav__logo", {
+        y: 50,
+        duration: 0.6,
         ease: "power4.out",
-        scrollTrigger: {
-          trigger: ".nav__logo",
-          start: "top bottom",
-          end: "bottom top",
-          scrub: -1,
-        },
-      }
-    );
-  })
+        delay: 1,
+      });
 
+      gsap.from(".nav__menu , .nav__btns", {
+        y: 50,
+        duration: 0.6,
+        ease: "power4.out",
+        delay: 1,
+      });
+    });
+
+    // 📱 For small screens
     mm.add("(max-width: 768px)", () => {
-      gsap.fromTo(
-      ".nav__logo",
-      {
-        y: -120,
-        x:50,
-        scale: 2,
-        color: "#fff",
-        textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
-      },
-      {
-        y: 0,
-        x:0,
-        scale: 1,
-        duration:1,
-        color:"var(--text-color)",
-        textShadow: "none",
+      gsap.from(".nav__logo", {
+        y: -30,
+        duration: 0.6,
         ease: "power4.out",
-        scrollTrigger: {
-          trigger: ".nav__logo",
-          start: "top bottom",
-          end: "bottom top+=250", // bigger distance
-          scrub: -1,
-        },
-      }
-    );
+        delay: 1,
+      });
 
-
-
-   
-  })
-  })
-
+      gsap.from(".nav__menu , .nav__btns", {
+        y: 50,
+        duration: 0.6,
+        ease: "power4.out",
+        delay: 1,
+      });
+    });
+  });
 
   return (
     <header className="header">
@@ -83,7 +59,7 @@ const Header = () => {
         >
           <ul className="nav__list">
             <li className="nav__item">
-              <a href="#services" className="nav__link">
+              <a href="#projects" className="nav__link">
                 <i className="ri-briefcase-line nav__icon"></i>Projects
               </a>
             </li>
@@ -102,9 +78,9 @@ const Header = () => {
           </div>
         </div>
 
-        <a href="index.html" className="nav__logo">
-          Chetan Sharma
-        </a>
+        <div className="nav__logo">
+          <a href="index.html">Chetan Sharma</a>
+        </div>
 
         <div className="nav__btns">
           <div className="theme-btn">
@@ -121,7 +97,6 @@ const Header = () => {
       </nav>
     </header>
   );
-  
-}
+};
 
 export default Header;

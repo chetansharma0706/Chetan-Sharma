@@ -20,6 +20,9 @@
             color: var(--accent-color);
             font-size: var(--normal-font-size);
             transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &:hover{
                 color: var(--primary-color);

@@ -32,6 +32,7 @@
 
     .nav__menu {
       display: flex;
+      overflow-y: hidden;
 
       .nav__list {
         display: flex;
@@ -45,6 +46,26 @@
           align-items: center;
           flex-direction: column;
           font-size: var(--small-font-size);
+          position: relative;
+          display: inline-block;
+          color: var(--text-color);
+          text-decoration: none;
+          padding-bottom: 2px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background: currentColor;
+            transition: width 0.4s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
         }
       }
     }
@@ -74,13 +95,11 @@
     border-top: 1px solid var(--accent-color);
     border-bottom: none;
 
-
     .nav {
-
-        .nav__logo {
-          font-size: var(--normal-font-size);
-          margin-right: 0;
-        }
+      .nav__logo {
+        font-size: var(--normal-font-size);
+        margin-right: 0;
+      }
       .nav__menu {
         display: block;
         position: fixed;
@@ -116,8 +135,6 @@
         .nav__close:hover {
           color: var(--accent-color);
         }
-
-        
       }
 
       .show__menu {
@@ -168,8 +185,5 @@
     border-top-right-radius: 20px;
     position: sticky;
     top: 0;
-
   }
-
-  
 }

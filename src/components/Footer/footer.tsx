@@ -1,4 +1,6 @@
 import "./footer.css"
+import { MdEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,10 +17,12 @@ const Footer = () => {
               <i className="ri-github-fill"></i>
             </a>
             <a href="#" className="home__social-icon" target="_blank">
-              <i className="ri-dribbble-fill"></i>
+                <FaWhatsapp size={15} />
+              
             </a>
             <a href="#" className="home__social-icon" target="_blank">
-              <i className="ri-behance-fill"></i>
+                <MdEmail size={15} />
+              
             </a>
             </div>
 
