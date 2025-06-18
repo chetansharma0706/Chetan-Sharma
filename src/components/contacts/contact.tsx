@@ -129,7 +129,7 @@ const Contact = () => {
               className="contact__link"
             >
               <MdEmail size={20} />
-              <p>chetansharma222555@gmail.com</p>
+              <p>chetansh...@gmail.com</p>
             </a>
             <a
               href="https://www.linkedin.com/in/chetansharma2003"
