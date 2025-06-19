@@ -12,84 +12,156 @@ const Home = () => {
   const mm = gsap.matchMedia();
 
   mm.add("(min-width: 769px)", () => {
-    gsap.from(".home__title, .home__subtitle", {
-      y: 30,
-      duration: 0.5,
-      ease: "power4.out",
-      delay: 1,
-    });
+    // Title and subtitle on scroll
+    gsap.fromTo(
+      ".home__title, .home__subtitle",
+      { y: 60, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__title",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: 2,
+        },
+      }
+    );
 
-    gsap.from(".home__name, .home__description , .hero-btn", {
-      y: 50,
-      duration: 0.5,
-      opacity: 0,
-      ease: "power3.out",
-            delay: 1,
+    // Name, description, button
+    gsap.fromTo(
+      ".home__name, .home__description, .hero-btn",
+      { y: 80, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__name",
+          start: "top 85%",
+          end: "top 40%",
+          scrub: 2,
+        },
+      }
+    );
 
-    });
+    // Social icons
+    gsap.fromTo(
+      ".home__social",
+      { x: -100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__social",
+          start: "top 90%",
+          end: "top 50%",
+          scrub: 2,
+        },
+      }
+    );
 
-    gsap.from(".home__social", {
-      x: -30,
-      opacity: 0,
-      ease: "power4.out",
-      duration: 0.5,
-            delay: 1,
-
-    });
-
-    gsap.from(".home__img", {
-      x: 150,
-      opacity: 0,
-      ease: "power4.out",
-      duration: 1,
-            delay: 1,
-
-    });
+    // Image
+    gsap.fromTo(
+      ".home__img",
+      { x: 120, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__img",
+          start: "top 85%",
+          end: "top 30%",
+          scrub: 2,
+        },
+      }
+    );
   });
 
+  // Mobile view
   mm.add("(max-width: 768px)", () => {
-    gsap.from(".home__title, .home__subtitle", {
-      y: 20,
-      duration: 0.5,
-      ease: "power4.out",
-            delay: 1,
+    gsap.fromTo(
+      ".home__title, .home__subtitle",
+      { y: 40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__title",
+          start: "top 85%",
+          end: "top 40%",
+          scrub: 2,
+        },
+      }
+    );
 
-    });
+    gsap.fromTo(
+      ".home__name, .home__description",
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__name",
+          start: "top 85%",
+          end: "top 40%",
+          scrub: 2,
+        },
+      }
+    );
 
-    gsap.from(".home__name, .home__description", {
-      y: 30,
-      duration: 0.5,
-      ease: "power3.out",
-            delay: 1,
+    gsap.fromTo(
+      ".hero-btn",
+      { x: -30, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".hero-btn",
+          start: "top 90%",
+          end: "top 50%",
+          scrub: 2,
+        },
+      }
+    );
 
-    });
+    gsap.fromTo(
+      ".home__img",
+      { x: 100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__img",
+          start: "top 85%",
+          end: "top 30%",
+          scrub: 2,
+        },
+      }
+    );
 
-    gsap.from(".hero-btn", {
-      x: -20,
-      opacity: 0,
-      ease: "power4.out",
-      duration: 0.5,
-            delay: 1,
-
-    });
-
-    gsap.from(".home__img", {
-      x: 100,
-      opacity: 0,
-      ease: "power4.out",
-      duration: 1,
-            delay: 1,
-
-    });
-
-    gsap.from(".home__social", {
-      x: -100,
-      opacity: 0,
-      ease: "power4.out",
-      duration: 1,
-           delay: 1,
-
-    });
+    gsap.fromTo(
+      ".home__social",
+      { x: -80, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".home__social",
+          start: "top 90%",
+          end: "top 50%",
+          scrub: 2,
+        },
+      }
+    );
   });
 });
 
