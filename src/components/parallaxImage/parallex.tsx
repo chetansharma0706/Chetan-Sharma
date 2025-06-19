@@ -10,7 +10,7 @@ gsap.registerPlugin(TextPlugin);
 const Parallex = () => {
   const texts = ["Hello there 👋 I'm", "Namaste 🙏 This is"];
   let current = 0;
-  const textRef = useRef<HTMLElement>(null);
+  const textRef = useRef<HTMLHeadingElement>(null);
 
   useGSAP(() => {
     gsap.to(".introName", {
