@@ -23,6 +23,17 @@ const Parallex = () => {
       },
     });
 
+    gsap.to(".intro-title", {
+      y: 500,
+      ease: "power4",
+      scrollTrigger: {
+        trigger: "intro-heading",
+        start: "top 0",
+        scrub: 1,
+      },
+    });
+
+
     const el = textRef.current;
     const typeText = () => {
       gsap.to(el, {
@@ -56,9 +67,10 @@ const Parallex = () => {
     <>
       <div className="cover-image">
         <div className="intro-heading">
-          <h1 ref={textRef} className="intro-title">
+            <div className="introTitle"> <h1 ref={textRef} className="intro-title">
             Hello there! I am
-          </h1>
+          </h1></div>
+         
           <div className="introName">
             {" "}
             <h1 className="intro-name">Chetan Sharma</h1>
