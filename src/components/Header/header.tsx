@@ -39,12 +39,12 @@ const Header = () => {
                 <i className="ri-mail-send-line nav__icon"></i> Contact
               </a>
             </li>
-            <li className="nav__item">
+            <li className="nav__item hideOnlargeWindow">
               <a href="#about" className="nav__link">
                 <i className="ri-user-line nav__icon"></i> About
               </a>
             </li>
-            <li className="nav__item">
+            <li className="nav__item hideOnlargeWindow">
               <a href="#skills" className="nav__link">
                 <i className="ri-tools-line nav__icon"></i> Skills
               </a>
