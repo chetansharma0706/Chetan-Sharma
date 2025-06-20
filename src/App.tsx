@@ -10,6 +10,7 @@ import Skills from './components/Skills/skills'
 
 function App() {
 
+
   return (
     <>
      <Parallex />

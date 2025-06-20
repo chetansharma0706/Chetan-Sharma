@@ -8,7 +8,7 @@ import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
 const Parallex = () => {
-  const texts = ["Hello there 👋 I'm", "Namaste 🙏 This is"];
+  const texts = ["Hello there 👋 I'm", "Namaste 🙏 I'm"];
   let current = 0;
   const textRef = useRef<HTMLHeadingElement>(null);
 

@@ -29,7 +29,6 @@
       color: var(--text-color);
       text-decoration: none;
       margin-right: 2rem;
-      
     }
 
     .nav__menu {
@@ -42,6 +41,10 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        text-align:center;
+
+
+        
 
         .nav__link {
           display: flex;
@@ -68,6 +71,11 @@
           &:hover::after {
             width: 100%;
           }
+
+        }
+
+        .hideOnlargeWindow {
+          display: none;
         }
       }
     }
@@ -110,9 +118,11 @@
         width: 100%;
         background-color: var(--background-color);
         padding: 2rem;
+        border-top:1px solid var(--accent-color);
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
         border-radius: 1rem 1rem 0 0;
+        z-index: 1000;
 
         .nav__list {
           display: grid;
@@ -120,9 +130,19 @@
           gap: 2rem;
           margin-bottom: 2rem;
 
+          
+
           .nav__link {
             font-size: var(--normal-font-size);
             text-align: center;
+
+            .nav__icon{
+              font-size: 1.2rem;
+            }
+          }
+
+          .hideOnlargeWindow {
+            display: block;
           }
         }
 
