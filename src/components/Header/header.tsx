@@ -35,7 +35,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#contact" className="nav__link">
+              <a href="#contact-me" className="nav__link">
                 <i className="ri-mail-send-line nav__icon"></i> Contact
               </a>
             </li>

@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -26,6 +27,21 @@
   opacity: 0.9; /* 👈 pattern visibility control */
   z-index: 2;
   pointer-events: none; /* allow clicks to pass through */
+}
+
+.scroll-container{
+   position: relative;
+  top:100px;
+  overflow-y: hidden;
+}
+
+.scroll-down{
+ 
+  font-size: var(--h1-font-size);
+  a{
+    color:rgb(209, 209, 209);
+    opacity: 0.8;
+  }
 }
 
 
@@ -60,6 +76,10 @@
     .intro-name{
     font-size: 5rem;
   }
+
+}
+.scroll-down{
+    font-size: 3.5rem;
   }
 }
 
@@ -71,7 +91,10 @@
     .intro-name{
     font-size: 4.5rem;
   }
-  }
+}
+.scroll-down{
+   font-size: 3.5rem;
+ }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -82,9 +105,12 @@
     .intro-name{
     font-size: 4rem;
   }
-
-
-  }
+  
+  
+}
+.scroll-down{
+   font-size: 3rem;
+ }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -95,7 +121,11 @@
     .intro-name{
     font-size: 3rem;
   }
-  }
+
+}
+.scroll-down{
+   font-size: 2rem;
+ }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -106,7 +136,10 @@
     .intro-name{
     font-size: 2.5rem;
   }
-  }
+}
+.scroll-down{
+   font-size: 1.5em;
+ }
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
@@ -117,7 +150,11 @@
     .intro-name{
     font-size: 2.5rem;
   }
+
   }
+   .scroll-down{
+      font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -130,4 +167,7 @@
     font-size: 2rem;
   }
   }
+   .scroll-down{
+      font-size: 1.2rem;
+    }
 }

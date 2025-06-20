@@ -110,7 +110,7 @@ const Contact = () => {
   });
 
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section" id="contact-me">
       <div className="contact__container container grid">
         {/* Heading */}
         <div className="contact_headings titles">
@@ -202,7 +202,7 @@ const Contact = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#contact" className="nav__link">
+              <a href="#contact-me" className="nav__link">
                 Contact
               </a>
             </li>

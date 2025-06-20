@@ -206,7 +206,7 @@ const Home = () => {
               GSAP, Tailwind.
             </p>
             <div className="hero-btn">
-            <a href="#contact" className="button button--flex" id="contact">
+            <a href="#contact-me" className="button button--flex" id="contact">
               Say Hello
               <RiSendPlaneFill className="button__icon" />
             </a>

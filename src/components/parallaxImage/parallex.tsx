@@ -13,7 +13,7 @@ const Parallex = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useGSAP(() => {
-    gsap.to(".introName", {
+    gsap.to(".introName , .scroll-down", {
       y: 500,
       ease: "power4",
       scrollTrigger: {
@@ -75,6 +75,11 @@ const Parallex = () => {
             {" "}
             <h1 className="intro-name">Chetan Sharma</h1>
           </div>
+        </div>
+        <div className="scroll-container">
+        <div className="scroll-down">
+          <a href="#home"><i className="ri-arrow-down-double-line"></i></a>
+        </div>
         </div>
       </div>
     </>
