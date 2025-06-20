@@ -39,8 +39,8 @@
  
   font-size: var(--h1-font-size);
   a{
-    color:rgb(209, 209, 209);
-    opacity: 0.8;
+    color:rgb(209, 209, 209) !important;
+    opacity: 0.8 !important;
   }
 }
 
