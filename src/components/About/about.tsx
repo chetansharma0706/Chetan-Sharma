@@ -101,7 +101,7 @@ const About = () => {
         <div className="about__content grid">
           <div className="about__img">
             <img
-              src="/myphoto.jpeg"
+              src="/profilephoto.jpg"
               alt="About Image"
               className="about-img"
               loading="lazy"
@@ -128,7 +128,7 @@ const About = () => {
               using JavaScript, React, Node.js, MongoDB, and modern tools like
               GSAP, Tailwind.
             </p>
-            <a href="./about.css" download className="button">
+            <a href="./resume_chetan_sharma.pdf" download className="button">
               <span>Download CV</span>
               {/* <i className="ri-arrow-right-up-line button__icon"></i> */}
               <FiDownload className="button__icon" />

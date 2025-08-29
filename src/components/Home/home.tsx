@@ -213,7 +213,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home__img">
-          <img src="/myphoto.jpeg" alt="my-image" className="home-img" loading="lazy"/>
+          <img src="/profilephoto.jpg" alt="my-image" className="home-img" loading="lazy"/>
           </div>
 
           <a href="#about" className="scroll__down">

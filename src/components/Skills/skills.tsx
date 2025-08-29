@@ -9,11 +9,15 @@ import {
   SiMongodb,
   SiExpress,
   SiPython,
+  SiSupabase,
+  SiPrisma,
 } from "react-icons/si";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { TbBrandAuth0 } from "react-icons/tb";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
@@ -103,21 +107,7 @@ const Skills = () => {
           <div className="skill__card card1">
             <h3 className="skill__title">Frontend Developer</h3>
             <div className="skill__card-grid grid">
-              <div className="skill__data">
-                <SiHtml5 className="skill__icon" />
-                <div className="skills-info">
-                  <h3 className="skill__name">HTML</h3>
-                  <span className="skill__level">Intermediate</span>
-                </div>
-              </div>
-
-              <div className="skill__data">
-                <SiCss3 className="skill__icon" />
-                <div className="skills-info">
-                  <h3 className="skill__name">CSS</h3>
-                  <span className="skill__level">Intermediate</span>
-                </div>
-              </div>
+          
 
               <div className="skill__data">
                 <SiJavascript className="skill__icon" />
@@ -150,6 +140,21 @@ const Skills = () => {
                   <span className="skill__level">Intermediate</span>
                 </div>
               </div>
+
+               <div className="skill__data">
+                <RiNextjsFill className="skill__icon" />
+                <div className="skills-info">
+                  <h3 className="skill__name">Next.js</h3>
+                  <span className="skill__level">Intermediate</span>
+                </div>
+              </div>
+                <div className="skill__data">
+                <RiTailwindCssFill className="skill__icon" />
+                <div className="skills-info">
+                  <h3 className="skill__name">Tailwind CSS</h3>
+                  <span className="skill__level">Intermediate</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -177,6 +182,27 @@ const Skills = () => {
                 <div className="skills-info">
                   <h3 className="skill__name">Python</h3>
                   <span className="skill__level">Intermediate</span>
+                </div>
+              </div>
+              <div className="skill__data">
+                <TbBrandAuth0 className="skill__icon" />
+                <div className="skills-info">
+                  <h3 className="skill__name">Auth.js</h3>
+                  <span className="skill__level">Intermediate</span>
+                </div>
+              </div>
+              <div className="skill__data">
+                <SiSupabase className="skill__icon" />
+                <div className="skills-info">
+                  <h3 className="skill__name">Supabase</h3>
+                  <span className="skill__level">Good</span>
+                </div>
+              </div>
+               <div className="skill__data">
+                <SiPrisma className="skill__icon" />
+                <div className="skills-info">
+                  <h3 className="skill__name">Prisma ORM</h3>
+                  <span className="skill__level">Good</span>
                 </div>
               </div>
             </div>

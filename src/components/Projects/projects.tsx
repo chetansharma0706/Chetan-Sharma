@@ -82,21 +82,20 @@ const Projects = () => {
         <div className="projects__content grid">
           <div className="projects__card">
             <div className="card__image">
-              <img src="https://plus.unsplash.com/premium_photo-1720715202866-c3f23c60a165?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project1" loading="lazy"/>
+              <img src="./snaptesthomepage.png" alt="project1" loading="lazy"/>
             </div>
             <div className="project-info">
-              <h3 className="projects__title">Web Development</h3>
+              <h3 className="projects__title">SnapTest- AI-powered Online Test Platform</h3>
               <p className="projects__description">
-                I create responsive and user-friendly websites using the latest
-                technologies.
+                SnapTest is an AI-powered platform that helps teachers create and share online tests in minutes.
               </p>
             </div>
             <div className="project__card-button">
-              <a href="#" className="link">
+              <a href="https://github.com/chetansharma0706/Snaptest" className="link" target="_blank">
                 Github
                 <FiArrowRight size={15} />
               </a>
-              <a href="#" className="link">
+              <a href="https://snaptest-9kz5.vercel.app/" className="link" target="_blank">
                 Live Demo
                 <FiArrowRight size={15} />
               </a>
@@ -104,21 +103,20 @@ const Projects = () => {
           </div>
           <div className="projects__card">
             <div className="card__image">
-              <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project2" loading="lazy"/>
+              <img src="https://github.com/chetansharma0706/Todo-List-React-App/blob/main/src/assets/TodoApp1.png?raw=true" alt="project3" loading="lazy"/>
             </div>
             <div className="project-info">
-              <h3 className="projects__title">App Development</h3>
+              <h3 className="projects__title">Easydone-Task Management App</h3>
               <p className="projects__description">
-                I develop mobile applications for both iOS and Android platforms
-                using React Native.
+                A task management application for helping users stay organized and productive.
               </p>
             </div>
             <div className="project__card-button">
-              <a href="#" className="link">
+              <a href="https://github.com/chetansharma0706/Todo-List-React-App" className="link" target="_blank">
                 Github
                 <FiArrowRight size={15} />
               </a>
-              <a href="#" className="link">
+              <a href="https://easydone.netlify.app/" className="link" target="_blank">
                 Live Demo
                 <FiArrowRight size={15} />
               </a>
@@ -126,26 +124,23 @@ const Projects = () => {
           </div>
           <div className="projects__card">
             <div className="card__image">
-              <img src="https://plus.unsplash.com/premium_photo-1720715202740-b6401efc72c2?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project3" loading="lazy"/>
+              <img src="https://i.pinimg.com/1200x/63/c5/96/63c59653aae2a957b87face70346b4a6.jpg" alt="project2" loading="lazy"/>
             </div>
             <div className="project-info">
-              <h3 className="projects__title">SEO Optimization</h3>
+              <h3 className="projects__title">HouseHelper - Marketplace for Local Home Services</h3>
               <p className="projects__description">
-                I optimize websites to rank higher in search engine results,
-                increasing visibility and traffic.
+               full-stack web applications 
               </p>
             </div>
             <div className="project__card-button">
-              <a href="#" className="link">
+              <a href="https://github.com/chetansharma0706/HomeHelper---MarketPlace-for-Local-Services" className="link" target="_blank">
                 Github
                 <FiArrowRight size={15} />
               </a>
-              <a href="#" className="link">
-                Live Demo
-                <FiArrowRight size={15} />
-              </a>
+              
             </div>
           </div>
+          
         </div>
       </div>
     </section>
