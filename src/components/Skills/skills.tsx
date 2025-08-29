@@ -1,7 +1,5 @@
 import "./skills.css";
 import {
-  SiHtml5,
-  SiCss3,
   SiJavascript,
   SiReact,
   SiNodedotjs,
